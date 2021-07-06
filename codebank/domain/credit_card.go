@@ -18,7 +18,7 @@ type CreditCard struct {
 	CreatedAt       time.Time
 }
 
-func newCreditCard() *CreditCard {
+func NewCreditCard() *CreditCard {
 	c := &CreditCard{}
 	c.ID = uuid.NewV4().String()
 	c.CreatedAt = time.Now()
